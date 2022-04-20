@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>comparision and assignment operator</title>
+<script>
+fun assi()
+{
+var a=5,b=7;
+a+=b;
+document.getElementById("p2").innerHTML+="<br>"+"a+=b"+"is"
++a;
+document.getElementById("p2").innerHTML+="<br>"+"a-=b"+"is"
++a;
+document.getElementById("p2").innerHTML+="<br>"+"a*=b"+"is"
++a;
+document.getElementById("p2").innerHTML+="<br>"+"a/=b"+"is"
++a;
+}
+</script>
+</head>
+<body>
+<p id="p2"> let suppose we have two variables a=5,b=7</p>
+<p onclick="assi()"> click here to apply assignment operators</p>
+</body>
+</html>

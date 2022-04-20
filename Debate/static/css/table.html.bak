@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<title>table</title>
+<script>
+function sum()
+{
+var a=parseInt(document.getElementById("t1").value);
+var b=parseInt(document.getElementById("t2").value);
+document.getElementById("t3").value=a+b;
+}
+function sub()
+{
+var a=parseInt(document.getElementById("t1").value);
+var b=parseInt(document.getElementById("t2").value);
+document.getElementById("t3").value=a-b;
+}
+function mul()
+{
+var a=parseInt(document.getElementById("t1").value);
+var b=parseInt(document.getElementById("t2").value);
+document.getElementById("t3").value=a*b;
+}
+function div()
+{
+var a=parseInt(document.getElementById("t1").value);
+var b=parseInt(document.getElementById("t2").value);
+document.getElementById("t3").value=a/b;
+}
+function arithm()
+{
+var a=parseInt(document.getElementById("t1").value);
+var b=parseInt(document.getElementById("t2").value);
+alert("sum is:" + (a+b));
+}
+function arithm1()
+{
+var a=5,b=7;
+alert("sum is:" + (a+b));
+alert("subtraction is:" +(a-b));
+alert("multiplication is:" +(a*b));
+alert("division is:" +(a/b));
+}
+</script>
+</head>
+<body>
+<form>
+<p onclick="arithm()">Click me to show the result in alert box</p>
+Enter Number A:<input type="text" id="t1"><br>
+Enter Number B:<input type="text" id="t2"><br>
+Result:<input type ="text" id="t3" disabled> <br>
+<input type="button" value="sum" onclick="sum()">
+<input type="button" value="subtraction" onclick="sub()">
+<input type="button" value="multiplication" onclick="mul()">
+<input type="button" value="division" onclick="div()">
+
+</form>
+</body>
+</html>
